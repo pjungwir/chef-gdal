@@ -1,3 +1,4 @@
+name              "gdal"
 maintainer        "Paul A. Jungwirth"
 maintainer_email  "pj@illuminatedcomputing.com"
 license           "Apache 2.0"
