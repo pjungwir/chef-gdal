@@ -19,6 +19,6 @@ bash "install_gdal_#{gdal_version}" do
     ldconfig
   EOH
   command ""
-  creates untar_dir + "/gdal-#{gdal_version}"
+  creates "/usr/local/bin/gdal-config"
   action :run
 end
