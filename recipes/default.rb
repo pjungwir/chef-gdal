@@ -2,8 +2,10 @@ gdal_version = node['gdal']['version']
 
 tarball = "gdal-#{gdal_version}.tar"
 tarball_gz = "gdal-#{gdal_version}.tar.gz"
+gdal_url = node['gdal']['download_url'] || "http://download.osgeo.org/gdal/#{tarball_gz}"
+
 remote_file "/tmp/#{tarball_gz}" do
-  source "http://download.osgeo.org/gdal/#{tarball_gz}"
+  source gdal_url
   mode "0644"
   action :create_if_missing
 end

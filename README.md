@@ -15,6 +15,17 @@ Tested on:
 ## Attributes
 
 * `node['gdal']['version']` - the version of GDAL to use.
+* `node['gdal']['download_url']` - the URL to retrieve the GDAL tarball.
+  Note that prior to GDAL 1.10, URLs like like this:
+
+    http://download.osgeo.org/gdal/gdal-1.9.2.tar.gz
+
+  But as of 1.10 they look like this:
+
+    http://download.osgeo.org/gdal/1.10.0/gdal-1.10.0.tar.gz
+
+  This attribute defaults to the former for backwards compatibility,
+  so it is only required for GDAL 1.10 and up.
 
 
 License and Author
