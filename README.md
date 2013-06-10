@@ -16,7 +16,7 @@ Tested on:
 
 * `node['gdal']['version']` - the version of GDAL to use.
 * `node['gdal']['download_url']` - the URL to retrieve the GDAL tarball.
-  Note that prior to GDAL 1.10, URLs like like this:
+  Note that prior to GDAL 1.10, URLs look like this:
 
     http://download.osgeo.org/gdal/gdal-1.9.2.tar.gz
 
