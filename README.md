@@ -27,6 +27,8 @@ Tested on:
   This attribute defaults to the former for backwards compatibility,
   so it is only required for GDAL 1.10 and up.
 
+  (Thanks for [Ross Young](https://github.com/RossLYoung) for noticing the 1.10 URL change!)
+
 
 License and Author
 ==================
