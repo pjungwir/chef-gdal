@@ -1,4 +1,5 @@
 gdal_version = node['gdal']['version']
+gdal_folder = node['gdal']['folder_version']
 
 tarball = "gdal-#{gdal_version}.tar"
 tarball_gz = "gdal-#{gdal_version}.tar.gz"
@@ -16,7 +17,7 @@ bash "install_gdal_#{gdal_version}" do
   code <<-EOH
     cd #{untar_dir} && \
     tar xzvf /tmp/#{tarball_gz} && \
-    cd gdal-#{gdal_version} && \
+    cd gdal-#{gdal_folder} && \
     ./configure && make && make install && \
     ldconfig
   EOH
