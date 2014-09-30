@@ -1,5 +1,5 @@
 gdal_version = node['gdal']['version']
-gdal_folder = node['gdal']['folder_version']
+gdal_folder = node['gdal']['folder_version'] || gdal_version
 
 tarball = "gdal-#{gdal_version}.tar"
 tarball_gz = "gdal-#{gdal_version}.tar.gz"
