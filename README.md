@@ -15,7 +15,7 @@ Tested on:
 ## Attributes
 
 * `node['gdal']['version']` - the version of GDAL to use.
-* `node['gdal']['folder_version']` - the GDAL folder name - Sometimes differs from version (1.11.1RC1 - 1.11.1)
+* `node['gdal']['folder_version']` - the GDAL folder name - Sometimes differs from version (1.11.1RC1 - 1.11.1). Defaults to `node['gdal']['version']`.
 * `node['gdal']['download_url']` - the URL to retrieve the GDAL tarball.
 
   Note that prior to GDAL 1.10, URLs look like this:
