@@ -22,6 +22,6 @@ bash "install_gdal_#{gdal_version}" do
     ldconfig
   EOH
   command ""
-  creates "/usr/local/bin/gdal-config"
+  not_if { ::File.exists? "/usr/local/bin/gdal-config" }
   action :run
 end
