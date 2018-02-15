@@ -21,7 +21,6 @@ bash "install_gdal_#{gdal_version}" do
     ./configure && make && make install && \
     ldconfig
   EOH
-  command ""
   not_if { ::File.exists? "/usr/local/bin/gdal-config" }
   action :run
 end
